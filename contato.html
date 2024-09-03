@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img/fundo2.jpg'); /* Imagem de fundo para a página */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a página */
+            background-position: center; /* Centraliza a imagem de fundo */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo do menu de navegação */
+        nav {
+            background: linear-gradient(90deg, #FF6347, #FF4500); /* Gradiente no fundo do menu */
+            padding: 10px 0;
+            border-bottom: 2px solid #FF4500; /* Linha inferior para separação */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 15px 25px;
+            background-color: #FF4500;
+            color: #FFFFFF;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF6347;
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Estilo da seção principal */
+        main {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo branca com opacidade */
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra ao redor da seção */
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            flex: 1; /* Faz o main crescer e ocupar o espaço disponível */
+        }
+
+        main h1 {
+            color: #FF4500;
+            margin-bottom: 20px;
+        }
+
+        main h2 {
+            color: #FF6347;
+            margin-bottom: 15px;
+        }
+
+        main form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main form label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        main form input,
+        main form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        main form input[type="submit"] {
+            background-color: #FF4500;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        main form input[type="submit"]:hover {
+            background-color: #FF6347;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #d4edda; /* Cor de fundo verde claro */
+            color: #155724; /* Cor do texto verde escuro */
+            border: 1px solid #c3e6cb; /* Borda verde claro */
+        }
+
+        footer {
+            background-color: #FF4500; /* Cor de fundo do rodapé */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #FF6347; /* Borda superior para separação */
+            margin-top: auto; /* Faz o rodapé ir para a parte inferior da página */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Entre em Contato Comigo</h1>
+        <h2>Telefone: 419 9649-4372</h2>
+        <h2>Email: cleverson.purkot@gmail.com</h2>
+        <h2>Ou preencha o formulário abaixo</h2>
+        <form id="contact-form" action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="message" class="message">
+            Obrigado! Mensagem enviada. Retornaremos em breve.
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cleverson da Silva Purkot - Todos os Direitos Reservados</p>
+    </footer>
+    <script>
+        
+        //JavaScript que lida com o formulário de contato
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            // Exibe a mensagem de confirmação
+            document.getElementById('message').style.display = 'block';
+
+            // Limpa os campos do formulário
+            document.getElementById('contact-form').reset();
+        });
+    </script>
+</body>
+
+</html>
