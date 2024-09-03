@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        /* Estilos globais */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9; /* Cor de fundo suave */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo do menu de navegação */
+        nav {
+            background: linear-gradient(90deg, #007BFF, #00BFFF); /* Gradiente do menu */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-weight: bold;
+            background: #0056b3; /* Cor de fundo dos botões */
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #004494; /* Cor de fundo ao passar o mouse */
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Estilo da seção principal */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff; /* Fundo branco para a seção principal */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor da seção */
+        }
+
+        main h1 {
+            color: #007BFF; /* Cor do título principal */
+            border-bottom: 2px solid #00BFFF; /* Linha inferior colorida no título */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        main ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main ul li {
+            margin-bottom: 10px;
+        }
+
+        main ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2em;
+            transition: color 0.3s;
+            border-bottom: 1px dashed #007BFF; /* Linha pontilhada abaixo do link */
+        }
+
+        main ul li a:hover {
+            color: #0056b3;
+            border-bottom: 1px solid #0056b3; /* Linha sólida ao passar o mouse */
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background: #007BFF; /* Cor de fundo do rodapé */
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border-top: 2px solid #0056b3; /* Borda superior */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto; /* Faz o rodapé ir para a parte inferior da página */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfólio</h1>
+        <ul>
+            <li><a href="https://github.com/CPurkot86-hub" target="_blank">Meu GitHub Pessoal</a></li>
+            <li><a href="https://github.com/CPurkot86-hub/testes-e2e-ebac-shop" target="_blank">Projeto Teste Ebac testes-e2e-ebac-shop</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cleverson da Silva Purkot - Todos os Direitos Reservados</p>
+    </footer>
+</body>
+
+</html>
