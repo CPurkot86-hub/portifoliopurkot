@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        /* Estiliza o menu de navegação */
+        nav ul {
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinha os itens horizontalmente */
+            background: linear-gradient(90deg, #00BFFF, #007BFF); /* Gradiente no fundo do menu */
+            border-bottom: 2px solid #0056b3; /* Linha inferior para separação */
+        }
+
+        nav ul li {
+            margin-right: 15px; /* Espaçamento entre os itens */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove o sublinhado dos links */
+            padding: 15px 25px; /* Espaçamento interno dos botões */
+            background-color: #007BFF; /* Cor de fundo dos botões */
+            color: #FFFFFF; /* Cor do texto dos botões */
+            border-radius: 8px; /* Cantos arredondados dos botões */
+            display: inline-block; /* Faz o link se comportar como um botão */
+            transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+            font-weight: bold; /* Negrito no texto */
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3; /* Cor de fundo ao passar o mouse sobre o botão */
+            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+        }
+
+        /* Estiliza o corpo da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Cor de fundo geral */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estiliza a seção principal */
+        main {
+            padding: 20px;
+            background-image: url('img/fundo.jpg'); /* Caminho para a imagem de fundo */
+            background-size: cover; /* Ajusta a imagem para cobrir o elemento */
+            background-position: center; /* Centraliza a imagem de fundo */
+            color: #FFFFFF; /* Cor do texto */
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade para garantir legibilidade */
+            border-radius: 8px; /* Bordas arredondadas */
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao redor da seção */
+        }
+
+        main h1 {
+            color: #FFD700; /* Cor do título principal */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra ao texto */
+        }
+
+        main p {
+            color: #FFFFFF; /* Cor do texto do parágrafo */
+            font-size: 1.2em; /* Tamanho do texto */
+            line-height: 1.6; /* Altura da linha para melhor leitura */
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #007BFF; /* Cor de fundo do rodapé */
+            padding: 15px;
+            text-align: center;
+            color: #fff; /* Cor do texto */
+            border-top: 2px solid #0056b3; /* Borda superior para separação */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto; /* Faz o rodapé ir para a parte inferior da página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bem-vindo ao Meu Portfólio Pessoal!</h1>
+        <p>Que bom ter você aqui! Neste espaço, você vai conhecer mais sobre minha jornada, meus projetos e conquistas, e como podemos nos conectar. Fique à vontade para explorar e descobrir o que me move profissionalmente e pessoalmente. Estou ansioso para compartilhar minha história com você!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cleverson da Silva Purkot - Todos os Direitos Reservados</p>
+    </footer>
+</body>
+</html>
